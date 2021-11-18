@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <!--Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of webpage-->
+    <title>Javascript Quiz</title>
+    <!--CSS JS-->
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <script src= "./assets/css/js/script.js"></script> 
+   
+</head>
+<body>
+    <div class="body-container">
+    <div class="intro">
+        <h2>This quiz includes 5 basic Javascript questions</h2>
+        <h2>For each incorrect answer your timer will go down by 10 seconds</h2>
+        <h2>Your total score will be the remainder of the timer</h2>
+        <button class="startbtn">Begin Quiz</button>
+        <button class="highscores" onclick="showHighscore()">Highscores</button>
+    </div>
+
+    <div class="quiz-container">
+        <div class="timer">Time: </div>
+            <div class="questions"><p>Question Here</p></div>
+                <button id="a" onclick="answer('a')">A</button>
+                <button id="b" onclick="answer('b')">B</button>
+                <button id="c" onclick="answer('c')">C</button>
+                <button id="d" onclick="answer('d')">D</button>
+            <div class = "result"></div>
+    </div>
+    <div class="end">
+        <div class="score"></div>
+        <input class="initials" type="text" placeholder="Enter Your Initials" name="initials"/> <!--Check to see if we need name-->
+        <button id="submit">Submit</button>
+    </div>
+
+    <div class="highscore-container">
+    <div class="highscore-page">
+        <div class="highscore-input">
+            <p>Initials</p>
+            <p>Score</p>
+        </div>
+        <div class="highscore-initials"></div>
+        <div class="highscore-score"></div>
+    </div>
+    <div class="post-game-btns">
+        <button class="resetQuiz" onclick="resetQuiz()">Try Again!</button>
+        <button class="clearScores" onclick="clearScores()">Clear Scores</button>
+    </div>
+    </div>
+    </div>
+    <script src="./assets/css/js/script.js"></script>
+</body>
+
